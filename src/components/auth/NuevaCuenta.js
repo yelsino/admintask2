@@ -1,11 +1,23 @@
+import { useState } from "react"
 
 const NuevaCuenta = () => {
 
-    const onchangeInicio = () => {
+    const [usuario, guardarUsuario] = useState({
+        nombre: '',
+        email: '',
+        password: '',
+        confirmar: '',
+    })
 
+    const onchangeInicio = (e) => {
+        guardarUsuario({
+            ...usuario,
+            [e.target.name] : e.target.value
+        })
     }
-    const onSubmit = () => {
-
+    const onSubmit = (e) => {
+        e.preventDefault()
+        
     }
 
 
