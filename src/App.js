@@ -1,8 +1,9 @@
+import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import NuevaCuenta from './components/auth/NuevaCuenta';
-import Proyectos from './components/layout/Proyectos';
 import Login from './components/auth/Login';
+import Proyectos from './components/layout/proyectos/Proyectos';
 
 function App() {
   return (

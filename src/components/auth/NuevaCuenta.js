@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState } from "react"
 
 const NuevaCuenta = () => {
@@ -12,12 +13,12 @@ const NuevaCuenta = () => {
     const onchangeInicio = (e) => {
         guardarUsuario({
             ...usuario,
-            [e.target.name] : e.target.value
+            [e.target.name]: e.target.value
         })
     }
     const onSubmit = (e) => {
         e.preventDefault()
-        
+
     }
 
 

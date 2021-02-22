@@ -10,7 +10,7 @@ const Barra = () => {
     return (
         <header className='app-header'>
             <p className='nombre-usuario'>
-                Hola
+                Hola YELSIÑO
                 </p>
 
             <nav className='nav-principal'>
